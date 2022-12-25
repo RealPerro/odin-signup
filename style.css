@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family:Arial, Helvetica, sans-serif;
+  font-weight: 300;
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+}
+
+.master-div {
+  display: flex;
+  flex-direction: row;
+  height:100vh;
+  min-height: 800px;
+  min-width: 906px;
+  position: absolute;
+}
+
+.left {
+  width: 40%;
+  min-width: 360px;
+  height:100%;
+  background-image: url("/static/matthew-henry-VviFtDJakYk-unsplash.jpg");
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container*/
+  position: relative;
+}
+
+#logo {
+  position: absolute;
+  background-color: black;
+  opacity: 40%;
+  font-size: 4rem;
+  top:300px;
+  width: 100%;
+  color:white;
+  padding:10px;
+}
+
+#photo-desc {
+  position: absolute;
+  bottom: 10px;
+  padding:10px;
+  right:10px;
+  font-size: small;
+}
+
+.right {
+  width: 60%;
+  min-width: 700px !important;
+  height:100%;
+}
+
+.master-form {
+  height: 100%;
+  width: 100%;
+}
+.r1, .r2, .r3 {
+  height:33%;
+  background-color: rgb(237, 237, 237);
+  align-content: center;
+  display:flex;
+  align-items: center;
+  padding-inline: 5%;
+  padding-top: 25px;
+  gap:10px;
+}
+
+.r2 {
+  background-color: white;
+  flex-direction: column;
+  align-items: flex-start;
+  align-content: flex-start;
+  justify-content: flex-start;
+  justify-items: flex-start;
+  flex-wrap: wrap;
+  min-width: 570px;
+  height:34%;
+}
+
+.f-field-container {
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap:20px 50px;
+}
+
+.f-field {
+  display: flex;
+  flex-direction:column;
+  font-weight: 100;
+  color: rgb(150, 150, 150);
+  margin-top:20px;
+  font-size: 0.8rem;
+  gap:5px;
+}
+
+input {
+  width:250px;
+  padding:5px;
+  border: solid 1px rgb(237, 237, 237);
+  border-radius: 5px;;
+}
+
+input:placeholder-shown {
+  border: solid 1px rgb(237, 237, 237) !important;
+}
+
+input:valid {
+  border: solid 1px rgb(74, 238, 93);
+}
+
+input:invalid {
+  border: solid 1px rgb(239, 70, 9);
+}
+
+#final-button {
+  align-self: flex-start;
+  background-color: steelblue;
+  color: white;
+  width:250px;
+  padding:5px;
+  border-radius: 5px;
+}
